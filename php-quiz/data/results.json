@@ -1,0 +1,581 @@
+{
+    "cd479980316dc945a13e3051f920169b": {
+        "id": "cd479980316dc945a13e3051f920169b",
+        "name": "Жолдас Қайсар",
+        "finished_at": "2026-10-18 11:21:38",
+        "duration": 27,
+        "timed_out": false,
+        "score": 4,
+        "max": 20,
+        "percent": 20,
+        "grade": "Неудовлетворительно",
+        "details": [
+            {
+                "text": "Какой вариант объявляет константу?",
+                "lecture": 2,
+                "user": "var PI = 3.14;",
+                "correct": "const PI = 3.14;",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Константу объявляют через const или define()."
+            },
+            {
+                "text": "Что нужно делать с данными формы на сервере?",
+                "lecture": 6,
+                "user": "Проверять тип и длину",
+                "correct": "Экранировать при выводе в HTML; Проверять тип и длину; Обрезать лишние пробелы",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Проверка в браузере легко обходится, поэтому сервер проверяет всё сам."
+            },
+            {
+                "text": "Какой тег открывает PHP-код в файле?",
+                "lecture": 1,
+                "user": "<%php",
+                "correct": "<?php",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "PHP-код пишется между <?php и закрывающим ?> (в файлах только с PHP закрывающий тег не нужен)."
+            },
+            {
+                "text": "Какой HTTP-заголовок используется для перенаправления?",
+                "lecture": 6,
+                "user": "Content-Type",
+                "correct": "Location",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "header('Location: page.php'); — и после него нужен exit."
+            },
+            {
+                "text": "Какая функция читает весь файл в строку?",
+                "lecture": 8,
+                "user": "file_get_contents()",
+                "correct": "file_get_contents()",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "file_get_contents($path)"
+            },
+            {
+                "text": "Какая функция оставляет в массиве только элементы, для которых callback вернул true?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "array_filter",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "array_filter($array, $callback)"
+            },
+            {
+                "text": "Какой результат даст выражение var_dump(0.1 + 0.2 == 0.3)?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "bool(false)",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Числа с плавающей точкой хранятся неточно, поэтому сумма не равна 0.3 точно."
+            },
+            {
+                "text": "Какие конструкции являются циклами в PHP?",
+                "lecture": 3,
+                "user": "for",
+                "correct": "while; for; foreach",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "if — условный оператор, а не цикл."
+            },
+            {
+                "text": "Какие из этих функций сортируют массив?",
+                "lecture": 5,
+                "user": "count",
+                "correct": "sort; rsort; usort",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "sort — по возрастанию, rsort — по убыванию, usort — с пользовательской функцией сравнения."
+            },
+            {
+                "text": "Что необходимо проверять при приёме загруженного файла?",
+                "lecture": 8,
+                "user": "Имя файла от клиента как доверенное",
+                "correct": "MIME-тип через Fileinfo; Код ошибки UPLOAD_ERR_*; Размер файла",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Имя и тип приходят от клиента и могут быть подделаны."
+            },
+            {
+                "text": "Какая функция запускает сессию?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "session_start",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "session_start() нужно вызвать до любого вывода."
+            },
+            {
+                "text": "Что нельзя хранить в cookie?",
+                "lecture": 7,
+                "user": "Язык интерфейса; Выбранную тему оформления",
+                "correct": "Пароль пользователя; Номер банковской карты",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Cookie хранится у клиента и может быть прочитана или изменена, секретные данные туда не кладут."
+            },
+            {
+                "text": "Как добавить элемент в конец массива $a?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "$a[] = 5;",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Короткая запись $a[] = значение добавляет элемент в конец."
+            },
+            {
+                "text": "Чем нормализация отличается от валидации?",
+                "lecture": 6,
+                "user": "Нормализация приводит данные к единому виду (например, trim), валидация проверяет их допустимость",
+                "correct": "Нормализация приводит данные к единому виду (например, trim), валидация проверяет их допустимость",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "Сначала данные очищают и приводят к виду (normalize), затем проверяют правила (validate)."
+            },
+            {
+                "text": "Какой блок используют для перехвата исключений?",
+                "lecture": 3,
+                "user": "if \/ else",
+                "correct": "try \/ catch",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Код, который может вызвать исключение, оборачивают в try, а обработку пишут в catch."
+            },
+            {
+                "text": "Что браузер получает в ответ на запрос PHP-страницы?",
+                "lecture": 1,
+                "user": "Готовый результат (обычно HTML)",
+                "correct": "Готовый результат (обычно HTML)",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "Сервер выполняет PHP и отправляет клиенту результат — HTML, JSON и т.п."
+            },
+            {
+                "text": "Как в PHP обозначается переменная?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "Именем со знаком $ в начале",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Имя переменной начинается со знака доллара: $name."
+            },
+            {
+                "text": "Где хранятся данные массива $_SESSION?",
+                "lecture": 7,
+                "user": "В адресной строке",
+                "correct": "На сервере, а браузеру передаётся только идентификатор сессии",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "В cookie хранится только id сессии, сами данные лежат на сервере."
+            },
+            {
+                "text": "Какая функция возвращает количество элементов массива?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "count()",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "count($array)"
+            },
+            {
+                "text": "Какое ключевое слово объявляет функцию?",
+                "lecture": 4,
+                "user": "function",
+                "correct": "function",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "function имя(параметры) { ... }"
+            }
+        ]
+    },
+    "66c1160fcb7d3e1f3d2c496546b71eff": {
+        "id": "66c1160fcb7d3e1f3d2c496546b71eff",
+        "name": "K K",
+        "finished_at": "2026-10-18 13:52:35",
+        "duration": 17,
+        "timed_out": false,
+        "score": 0,
+        "max": 20,
+        "percent": 0,
+        "grade": "Неудовлетворительно",
+        "details": [
+            {
+                "text": "В каком суперглобальном массиве находятся данные формы, отправленной методом POST?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "$_POST",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "$_POST содержит поля формы, отправленной методом POST."
+            },
+            {
+                "text": "Что выведет echo 10 % 3;",
+                "lecture": 3,
+                "user": "— нет ответа —",
+                "correct": "1",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Оператор % возвращает остаток от деления: 10 = 3·3 + 1."
+            },
+            {
+                "text": "Какой вариант объявляет константу?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "const PI = 3.14;",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Константу объявляют через const или define()."
+            },
+            {
+                "text": "Чем нормализация отличается от валидации?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "Нормализация приводит данные к единому виду (например, trim), валидация проверяет их допустимость",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Сначала данные очищают и приводят к виду (normalize), затем проверяют правила (validate)."
+            },
+            {
+                "text": "Откуда надёжнее брать MIME-тип загруженного файла?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "Из Fileinfo (finfo) по содержимому файла",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Поле type присылает браузер клиента, Fileinfo определяет тип по содержимому."
+            },
+            {
+                "text": "Какой флаг блокирует файл при записи через file_put_contents()?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "LOCK_EX",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "LOCK_EX — эксклюзивная блокировка: другие процессы ждут окончания записи."
+            },
+            {
+                "text": "Где хранятся данные массива $_SESSION?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "На сервере, а браузеру передаётся только идентификатор сессии",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "В cookie хранится только id сессии, сами данные лежат на сервере."
+            },
+            {
+                "text": "Какой атрибут cookie запрещает доступ к ней из JavaScript?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "HttpOnly",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "HttpOnly скрывает cookie от document.cookie."
+            },
+            {
+                "text": "Что нужно делать с данными формы на сервере?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "Экранировать при выводе в HTML; Проверять тип и длину; Обрезать лишние пробелы",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Проверка в браузере легко обходится, поэтому сервер проверяет всё сам."
+            },
+            {
+                "text": "Какая функция меняет идентификатор сессии после входа пользователя?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "session_regenerate_id",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "session_regenerate_id(true) защищает от фиксации сессии."
+            },
+            {
+                "text": "Как добавить элемент в конец массива $a?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "$a[] = 5;",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Короткая запись $a[] = значение добавляет элемент в конец."
+            },
+            {
+                "text": "Какая функция запускает сессию?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "session_start",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "session_start() нужно вызвать до любого вывода."
+            },
+            {
+                "text": "Какой HTTP-заголовок используется для перенаправления?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "Location",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "header('Location: page.php'); — и после него нужен exit."
+            },
+            {
+                "text": "Какой оператор пропускает остаток текущей итерации и переходит к следующей?",
+                "lecture": 3,
+                "user": "— нет ответа —",
+                "correct": "continue",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "continue переходит к следующей итерации, break полностью выходит из цикла."
+            },
+            {
+                "text": "Где выполняется PHP-код?",
+                "lecture": 1,
+                "user": "— нет ответа —",
+                "correct": "На веб-сервере",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "PHP — серверный язык: код выполняется на сервере, пользователь получает только результат."
+            },
+            {
+                "text": "Как указать, что функция возвращает строку?",
+                "lecture": 4,
+                "user": "— нет ответа —",
+                "correct": "function f(): string",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Тип возвращаемого значения указывают после двоеточия: function f(): string."
+            },
+            {
+                "text": "Какой результат даст выражение var_dump(0.1 + 0.2 == 0.3)?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "bool(false)",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Числа с плавающей точкой хранятся неточно, поэтому сумма не равна 0.3 точно."
+            },
+            {
+                "text": "Что означает тип ?int у параметра?",
+                "lecture": 4,
+                "user": "— нет ответа —",
+                "correct": "Целое число или null",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "?int — сокращение от int|null."
+            },
+            {
+                "text": "Каким ключом запускается встроенный веб-сервер PHP (например, php ... localhost:8000)?",
+                "lecture": 1,
+                "user": "— нет ответа —",
+                "correct": "-S",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Команда: php -S localhost:8000."
+            },
+            {
+                "text": "Что делает функция json_encode()?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "Превращает массив или объект PHP в строку JSON",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "json_encode($data) возвращает строку JSON."
+            }
+        ]
+    },
+    "3360a394ca034025e63f9ac0e183a93e": {
+        "id": "3360a394ca034025e63f9ac0e183a93e",
+        "name": "Жолдас Қайсар",
+        "finished_at": "2026-10-18 14:00:03",
+        "duration": 431,
+        "timed_out": false,
+        "score": 5,
+        "max": 20,
+        "percent": 25,
+        "grade": "Неудовлетворительно",
+        "details": [
+            {
+                "text": "Какой атрибут cookie запрещает доступ к ней из JavaScript?",
+                "lecture": 7,
+                "user": "HttpOnly",
+                "correct": "HttpOnly",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "HttpOnly скрывает cookie от document.cookie."
+            },
+            {
+                "text": "Что делает функция htmlspecialchars()?",
+                "lecture": 6,
+                "user": "Заменяет спецсимволы HTML на безопасные сущности",
+                "correct": "Заменяет спецсимволы HTML на безопасные сущности",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "Это защита от XSS при выводе текста пользователя на страницу."
+            },
+            {
+                "text": "Как в PHP обозначается переменная?",
+                "lecture": 2,
+                "user": "Именем со знаком $ в начале",
+                "correct": "Именем со знаком $ в начале",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "Имя переменной начинается со знака доллара: $name."
+            },
+            {
+                "text": "Какие из этих функций сортируют массив?",
+                "lecture": 5,
+                "user": "sort; rsort; usort",
+                "correct": "sort; rsort; usort",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "sort — по возрастанию, rsort — по убыванию, usort — с пользовательской функцией сравнения."
+            },
+            {
+                "text": "От какой угрозы защищает CSRF-токен?",
+                "lecture": 7,
+                "user": "От отправки формы со стороннего сайта от имени пользователя",
+                "correct": "От отправки формы со стороннего сайта от имени пользователя",
+                "is_correct": true,
+                "answered": true,
+                "explanation": "Токен лежит в сессии и в форме, сторонний сайт его не знает."
+            },
+            {
+                "text": "Где хранятся данные массива $_SESSION?",
+                "lecture": 7,
+                "user": "В адресной строке",
+                "correct": "На сервере, а браузеру передаётся только идентификатор сессии",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "В cookie хранится только id сессии, сами данные лежат на сервере."
+            },
+            {
+                "text": "Какой оператор пропускает остаток текущей итерации и переходит к следующей?",
+                "lecture": 3,
+                "user": "exit",
+                "correct": "continue",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "continue переходит к следующей итерации, break полностью выходит из цикла."
+            },
+            {
+                "text": "Переменная создана вне функции. Что будет при обращении к ней внутри функции без global и без передачи параметром?",
+                "lecture": 4,
+                "user": "Значение будет доступно",
+                "correct": "Переменная окажется недоступной (локальная область видимости)",
+                "is_correct": false,
+                "answered": true,
+                "explanation": "Внутри функции своя область видимости: переменные нужно передавать параметрами."
+            },
+            {
+                "text": "Какая функция создаёт криптографически случайные байты (например, для имени файла)?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "random_bytes",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "bin2hex(random_bytes(16)) даёт случайную строку из 32 символов."
+            },
+            {
+                "text": "Какая функция оставляет в массиве только элементы, для которых callback вернул true?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "array_filter",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "array_filter($array, $callback)"
+            },
+            {
+                "text": "Что нельзя хранить в cookie?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "Пароль пользователя; Номер банковской карты",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Cookie хранится у клиента и может быть прочитана или изменена, секретные данные туда не кладут."
+            },
+            {
+                "text": "Что вернёт json_decode($json, true)?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "Ассоциативный массив",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Второй параметр true заставляет возвращать массивы вместо объектов."
+            },
+            {
+                "text": "Какая функция возвращает количество элементов массива?",
+                "lecture": 5,
+                "user": "— нет ответа —",
+                "correct": "count()",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "count($array)"
+            },
+            {
+                "text": "В каком суперглобальном массиве находятся данные формы, отправленной методом POST?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "$_POST",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "$_POST содержит поля формы, отправленной методом POST."
+            },
+            {
+                "text": "Какие из перечисленных типов являются скалярными?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "bool; string; int",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Скалярные типы: int, float, string, bool. array — составной тип."
+            },
+            {
+                "text": "Какая функция запускает сессию?",
+                "lecture": 7,
+                "user": "— нет ответа —",
+                "correct": "session_start",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "session_start() нужно вызвать до любого вывода."
+            },
+            {
+                "text": "Какое ключевое слово объявляет функцию?",
+                "lecture": 4,
+                "user": "— нет ответа —",
+                "correct": "function",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "function имя(параметры) { ... }"
+            },
+            {
+                "text": "Чем нормализация отличается от валидации?",
+                "lecture": 6,
+                "user": "— нет ответа —",
+                "correct": "Нормализация приводит данные к единому виду (например, trim), валидация проверяет их допустимость",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Сначала данные очищают и приводят к виду (normalize), затем проверяют правила (validate)."
+            },
+            {
+                "text": "Какая функция возвращает тип переменной в виде строки?",
+                "lecture": 2,
+                "user": "— нет ответа —",
+                "correct": "gettype()",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "gettype($x) вернёт, например, \"integer\" или \"string\"."
+            },
+            {
+                "text": "Что необходимо проверять при приёме загруженного файла?",
+                "lecture": 8,
+                "user": "— нет ответа —",
+                "correct": "MIME-тип через Fileinfo; Код ошибки UPLOAD_ERR_*; Размер файла",
+                "is_correct": false,
+                "answered": false,
+                "explanation": "Имя и тип приходят от клиента и могут быть подделаны."
+            }
+        ]
+    }
+}
